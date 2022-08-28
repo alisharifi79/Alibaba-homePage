@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>بلیط هواپیما - خرید بلیط هواپیما | علی‌بابا</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+
+    <script src="https://use.fontawesome.com/5e30775e01.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="total-nav">
+      <nav class="navbar">
+        <div id="nav-content">
+          <div id="logo">
+            <img
+              src="https://tech.alibaba.ir/content/images/2019/05/alibaba-logo.png"
+              alt="logo"
+            />
+            <a href="#"> alibaba.ir <span>خرید بلیط، هتل، تور</span> </a>
+          </div>
+          <div id="right-side-nav">
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa-solid fa-angle-down"></i>
+                بلیط
+              </button>
+              <ul id="dropdown-content">
+                <li><a href="#">پرواز داخلی</a></li>
+                <hr />
+                <li><a href="#">پرواز خارجی</a></li>
+                <hr />
+                <li><a href="#">قطار</a></li>
+                <hr />
+                <li><a href="#">اتوبوس</a></li>
+              </ul>
+            </div>
+            <hr id="ver-line" />
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa-solid fa-angle-down"></i>
+                اقامت
+              </button>
+              <ul id="dropdown-content">
+                <li><a href="#">هتل</a></li>
+                <hr />
+                <li><a href="#">ویلا و اقامتگاه</a></li>
+              </ul>
+            </div>
+            <hr id="ver-line" />
+            <div id="tour-navbar">
+              <a href="#tour">تور</a>
+            </div>
+            <hr id="ver-line" />
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fa-solid fa-angle-down"></i>
+                بیشتر
+              </button>
+              <ul id="dropdown-content">
+                <li><a href="#">علی بابا پلاس</a></li>
+                <hr />
+                <li><a href="#">مجله علی‌بابا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="left-side-nav">
+            <div id="support">
+              <i class="fa-regular fa-circle-question"></i>
+              <a href="#">مرکز پشتیبانی آنلاین</a>
+            </div>
+            <div id="purchase">
+              <i class="fa-solid fa-rectangle-list"></i>
+              <a href="#">پیگیری خرید</a>
+            </div>
+            <div id="sign-in">
+              <i class="fa-solid fa-user"></i>
+              <a href="#">ورود و ثبت‌نام</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- responsive header -->
+    <div hidden id="header-logo">
+      <img
+        src="https://cdn.alibaba.ir/h2/mobile/assets/images/shawl_logotype_black-fd7a79b7.svg"
+        alt="logo"
+      />
+    </div>
+    <!-- responsive navbar -->
+    <div hidden id="responsive-nav">
+      <div id="row1" class="row">
+        <div class="column">
+          <a>قطار<i class="fa-solid fa-train"></i></a>
+        </div>
+        <div class="column">
+          <a>هتل<i class="fa-solid fa-hotel"></i></a>
+        </div>
+        <div class="column">
+          <a>اقامتگاه<i class="fa-solid fa-house-chimney"></i></a>
+        </div>
+      </div>
+      <div id="row2" class="row">
+        <div class="column">
+          <a>پرواز<i class="fa-solid fa-plane-up"></i></a>
+        </div>
+        <div class="column">
+          <a>اتوبوس<i class="fa-solid fa-bus-simple"></i></a>
+        </div>
+        <div class="column">
+          <a>تور<i class="fa-solid fa-suitcase-rolling"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="travel">
+      <div id="flyImg-div">
+        <img
+          id="FlyIn-img"
+          src="https://cdn.alibaba.ir/h2/desktop/assets/images/hero/hero-e1fa22fb.webp"
+        />
+      </div>
+      <!-- sticky nav responsive -->
+      <div hidden id="sticky-nav" class="row">
+        <div class="column">
+          <a><i class="fa-solid fa-plane-up"></i></a>
+        </div>
+        <div class="column">
+          <a><i class="fa-solid fa-train"></i></a>
+        </div>
+        <div class="column">
+          <a><i class="fa-solid fa-bus-simple"></i></a>
+        </div>
+        <div class="column">
+          <a><i class="fa-solid fa-hotel"></i></a>
+        </div>
+        <div class="column">
+          <a><i class="fa-solid fa-suitcase-rolling"></i></a>
+        </div>
+        <div class="column">
+          <a><i class="fa-solid fa-house-chimney"></i></a>
+        </div>
+      </div>
+      <!-- Tab links -->
+      <div id="tab-div">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Villa')">
+            <i class="fa-solid fa-house"></i>
+            <p>ویلا و اقامتگاه</p>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Hotel')">
+            <i class="fa-solid fa-hotel"></i>
+            <p>هتل</p>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Tour')">
+            <i class="fa-solid fa-suitcase-rolling"></i>
+            <p>تور</p>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Bus')">
+            <i class="fa-solid fa-bus-simple"></i>
+            <p>اتوبوس</p>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Train')">
+            <i class="fa-solid fa-train-subway"></i>
+            <p>قطار</p>
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'FlyOut')">
+            <i class="fa-solid fa-globe"></i>
+            <p>پرواز خارجی</p>
+          </button>
+          <button class="tablinks active" onclick="openTab(event, 'FlyIn')">
+            <i class="fa-solid fa-plane"></i>
+            <p>پرواز داخلی</p>
+          </button>
+        </div>
+      </div>
+      <!-- Tab content -->
+      <div id="tab-content-div">
+        <div id="FlyIn" class="tabcontent open">
+          <form action="#" id="travel-form">
+            <div id="one-two-way">
+              <div class="dropdown">
+                <button class="dropbtn">
+                  یک طرفه
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul id="dropdown-content">
+                  <li><a href="#">یک طرفه</a></li>
+                  <hr />
+                  <li><a href="#">رفت و برگشت</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">مسافران</label>
+                  <input id="passenger" type="text" placeholder="مسافر" />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ برگشت" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ رفت" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد (شهر)" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="مبدا (شهر)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="FlyOut" class="tabcontent">
+          <form action="#" id="travel-form">
+            <div id="FlyOut-btn">
+              <div id="one-two-way">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    یک طرفه
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul id="dropdown-content">
+                    <li><a href="#">یک طرفه</a></li>
+                    <li><a href="#">رفت و برگشت</a></li>
+                    <li><a href="#">چند مسیره</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="one-two-way">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    اکونومی
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul id="dropdown-content">
+                    <li><a href="">اکونومی</a></li>
+                    <li><a href="">پرمیوم اکونومی</a></li>
+                    <li><a href="">بیزینس</a></li>
+                    <li><a href="">پرمیوم بیزینس</a></li>
+                    <li><a href="">فرست</a></li>
+                    <li><a href="">پرمیوم فرست</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">مسافران</label>
+                  <input id="passenger" type="text" placeholder="مسافر" />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ برگشت" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ رفت" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد (شهر، فرودگاه)" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="مبدا (شهر، فرودگاه)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Train" class="tabcontent display">
+          <form action="#" id="travel-form">
+            <div id="FlyOut-btn">
+              <div id="one-two-way">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    یک طرفه
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul id="dropdown-content">
+                    <li><a href="#">یک طرفه</a></li>
+                    <li><a href="#">رفت و برگشت</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="one-two-way">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    دربست نمی‌خواهم
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul id="dropdown-content">
+                    <li><a href="">دربست می‌خواهم</a></li>
+                    <li><a href="">دربست نمی‌خواهم</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="one-two-way">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    مسافرین عادی
+                    <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul id="dropdown-content">
+                    <li><a href="#">مسافرین عادی</a></li>
+                    <li><a href="#"> ویژه برادران </a></li>
+                    <li><a href="#"> ویژه خواهران</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">مسافران</label>
+                  <input id="passenger" type="text" placeholder="مسافر" />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ برگشت" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ رفت" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد (شهر)" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="مبدا (شهر)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Bus" class="tabcontent">
+          <form action="#" id="travel-form">
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ حرکت" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد (شهر، پایانه)" />
+                  </div>
+                  <div class="field">
+                    <input
+                      id="bus-input"
+                      type="text"
+                      placeholder="مبدا (شهر، پایانه)"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Tour" class="tabcontent">
+          <form action="#" id="travel-form">
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">مسافران</label>
+                  <input
+                    id="passenger"
+                    type="text"
+                    placeholder="بزرگسال،اتاق"
+                  />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ برگشت" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ رفت" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد (شهر)" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="مبدا (شهر)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Hotel" class="tabcontent">
+          <form action="#" id="travel-form">
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">مسافران</label>
+                  <input
+                    id="passenger"
+                    type="text"
+                    placeholder="بزرگسال،اتاق"
+                  />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ خروج" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ ورود" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="مقصد یا هتل (داخلی و خارجی)"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Villa" class="tabcontent">
+          <form action="#" id="travel-form">
+            <div class="fields">
+              <div class="button-area">
+                <button type="submit">جستجو</button>
+              </div>
+              <div id="not-btn-part">
+                <div id="passe" class="field">
+                  <label for="passenger">تعداد مسافران</label>
+                  <input id="passenger" type="text" placeholder="یک نفر" />
+                </div>
+                <div class="date-field">
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ خروج" />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="تاریخ ورود" />
+                  </div>
+                </div>
+                <div class="place-field">
+                  <div class="field">
+                    <input type="text" placeholder="مقصد یا نوع اقامتگاه" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- img -->
+      <div id="alibaba">
+        <img
+          src="https://cdn.alibaba.ir/h2/desktop/assets/images/banner/summer-campaign.desktop-315958ab.webp"
+          alt="alibaba"
+        />
+      </div>
+      <!-- slideshow -->
+      <div id="slideshow-section">
+        <div id="slideshow">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides-one"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-hotel-315c70a2.webp"
+            />
+            <img
+              class="mySlides-one"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-banner-2dd62db2.webp"
+            />
+            <img
+              class="mySlides-one"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/safarnameh-banner-9514a22c.webp"
+            />
+          </div>
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides-two"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-banner-2dd62db2.webp"
+            />
+            <img
+              class="mySlides-two"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/safarnameh-banner-9514a22c.webp"
+            />
+            <img
+              class="mySlides-two"
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-hotel-315c70a2.webp"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- alibaba guide -->
+      <div id="alibaba-guide-section">
+        <div id="alibaba-guide">
+          <ul id=" sterdad">
+            <li><i class="fa-solid fa-circle-dollar-to-slot"></i></li>
+            <li><h3>درخواست استرداد</h3></li>
+            <li><p>سریع‌ترین راه برای کنسلی و لغو رزرو</p></li>
+            <li><a href="#">سفرهای من</a></li>
+          </ul>
+          <ul id="rahnama">
+            <li><i class="fa-regular fa-circle-question"></i></li>
+            <li><h3>راهنمای سفر</h3></li>
+            <li><p>راهنمای خرید و استرداد، قوانین و پرسش‌ها</p></li>
+            <li><a href="#">مرکز پشتیبانی آنلاین</a></li>
+          </ul>
+          <ul id="poshtibani">
+            <li><i class="fa-solid fa-headset"></i></li>
+            <li><h3>درخواست پشتیبانی</h3></li>
+            <li><p>سریع‌ترین راه برای بررسی مشکلات شما</p></li>
+            <li><a href="#">درخواست پشتیبانی</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- responsive slideshow -->
+      <div hidden id="responsive-slideshow">
+        <div class="w3-content w3-display-container">
+          <img
+            class="mySlides-res"
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-hotel-315c70a2.webp"
+          />
+          <img
+            class="mySlides-res"
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/worldcup-banner-2dd62db2.webp"
+          />
+          <img
+            class="mySlides-res"
+            src="https://cdn.alibaba.ir/h2/desktop/assets/images/breaking-news/safarnameh-banner-9514a22c.webp"
+          />
+        </div>
+      </div>
+      <!-- Application guide -->
+      <div id="app-guide-section">
+        <div id="app-guide">
+          <div hidden id="link-div">
+            <ul id="app-link-res">
+              <li><h2>اپلیکیشن علی‌بابا</h2></li>
+              <li><p>همه سفر‌ها در جیب شماست</p></li>
+              <li><button hidden>راهمای نصب</button></li>
+            </ul>
+          </div>
+          <ul id="qrcode">
+            <li>
+              <img
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/app-mobile/qrcode-97ae53b8.jpg"
+                alt="qrcode"
+              />
+            </li>
+          </ul>
+          <ul id="app-link">
+            <li><h1>اپلیکیشن علی‌بابا</h1></li>
+            <li><h3>سریع‌تر و مطمئن‌تر به سفر بروید‌</h3></li>
+            <li><a href="#">مشاهده لینک های دانلود</a></li>
+            <li><p>قابلیت نصب روی Android و iOS</p></li>
+          </ul>
+          <ul id="app-img">
+            <li>
+              <img
+                src="https://cdn.alibaba.ir/h2/desktop/assets/images/app-mobile/app-mobile@4x-d79a719b.webp"
+                alt="app"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- question-section -->
+      <div id="questions-section">
+        <h1>پرسش های شما</h1>
+        <div id="questions">
+          <ul>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>چند روز قبل از پرواز،
+                      بلیط هواپیما را بخریم؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما
+                          گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز
+                          ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه
+                          می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک
+                          پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر
+                          تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما
+                          را انجام دهید.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>در هر پرواز، میزان بار
+                      مجاز چقدر است؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی
+                          دارد. هنگام خرید آنلاین بلیط هواپیما می‌توانید میزان
+                          بار مجاز را در اطلاعات بلیط ببینید. طبیعی است که اگر
+                          میزان بارتان بیش از حد مجاز باشد، باید جریمه پرداخت
+                          کنید.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>نرخ بلیط هواپیما برای
+                      نوزادان و کودکان زیر ۱۲ سال چگونه است؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >نرخ بلیط کودکان و نوزادان به کلاس پرواز و کلاس نرخی
+                          بستگی دارد. به صورت کلی، قیمت بلیط مسافر کودک (2 الی
+                          12 سال) معادل 50 الی 100 درصد بلیط بزرگسال، و قیمت
+                          بلیط مسافر نوزاد (تا دو سال) 10 درصد بلیط بزرگسال است.
+                          هنگام تهیه بلیط هواپیما به این نکته توجه داشته
+                          باشید.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>رزرو آنلاین بلیط
+                      هواپیما هزینه بیشتری از خرید حضوری دارد؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >خیر؛ زمانی که از یک سایت معتبر خرید بلیط هواپیما،
+                          اقدام به خرید می‌کنید، نه تنها هزینه بیشتری پرداخت
+                          نمی‌کنید، حتی ممکن است تخفیف هم بگیرید. ضمنا با خرید
+                          آنلاین بلیط هواپیما از پشتیبانی نیز برخودار هستید.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>آیا پس از خرید
+                      اینترنتی بلیط هواپیما امکان استرداد آن وجود دارد؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >وقتی از علی‌بابا یعنی بهترین سایت خرید بلیط هواپیما ،
+                          بلیطتان را رزرو می‌کنید، خیالتان آسوده است که امکان
+                          استرداد وجه در صورت کنسل کردن بلیط وجود دارد. میزان
+                          جریمه را هم هنگام رزرو آنلاین بلیط هواپیما در قسمت
+                          قوانین استرداد بخوانید. میزان جریمه به نوع بلیط، کلاس
+                          پروازی، کلاس نرخی و... بستگی دارد.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>آیا پس از خرید بلیط
+                      هواپیما، امکان تغییر نام یا نام خانوادگی وجود دارد؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >در پرواز داخلی یا خارجی، امکان تغییر نام و نام
+                          خانوادگی در بلیط سیستمی وجود ندارد. اما در بلیط چارتر،
+                          برخی از چارترکننده‌ها این تغییر را می‌پذیرند.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="question-div">
+                <div class="container">
+                  <nav>
+                    <input id="toggle" type="checkbox" checked />
+                    <h2>
+                      <i class="fa-solid fa-question"></i>هنگامی که از سایت خرید
+                      بلیط هواپیما رزرو بلیط را انجام می‌دهیم، امکان انتخاب
+                      صندلی مورد نظرمان وجود دارد؟
+                    </h2>
+                    <ul>
+                      <li>
+                        <a href="#chapter1"
+                          >خیر؛ هنگام رزرو بلیط هواپیما داخلی یا خارجی امکان
+                          انتخاب صندلی وجود ندارد. البته در زمان چک‌این انتخاب
+                          محدوده صندلی امکان‌پذیر است.</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="last-section">
+        <div id="top-part">
+          <div id="text-part">
+            <h2>بلیط هواپیما</h2>
+            <br />
+            <p>
+              علی‌بابا بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ،
+              قطار و اتوبوس در کشور است که از سال ۱۳۹۳ کار خود را شروع کرده و در
+              این مدت توانسته رضایت درصد قابل توجهی از کاربران را به دست بیاورد.
+              در ابتدا، فروش بلیط پرواز داخلی در دستور کار علی‌بابا قرار داشت؛
+              اما به مرور امکان خرید سایر محصولات گردشگری نیز به علی‌بابا اضافه
+              شد.
+            </p>
+            <br />
+            <h3>مزایای خرید بلیط هواپیما از علی‌بابا</h3>
+            <br />
+            <p>
+              شما با خرید بلیط هواپیما از علی‌بابا با سامانه مطمئن و معتبری
+              روبه‌رو هستید که تمام نیازهایتان را پاسخ می‌دهد. برای خرید آنلاین
+              بلیط هواپیما در علی‌بابا کافیست مبدا، مقصد و تاریخ پرواز خود را
+              انتخاب کنید. پس از کلیک روی جستجو، لیست قیمت بلیط هواپیما به مقصد
+              مورد نظر شما ظاهر می‌شود. در این لیست، انتخابهای متعددی پیش روی
+              شماست. برای اینکه گزینه‌ ها را برای خرید بلیط هواپیما محدودتر
+              کنید، علی‌بابا ابزارهای مختلفی در اختیار شما می‌گذارد.
+            </p>
+          </div>
+          <div id="img-part">
+            <img
+              src="https://cdn.alibaba.ir/h2/desktop/assets/images/baggage/baggage@3x-bda919ec.webp"
+              alt="baggage"
+            />
+          </div>
+        </div>
+        <br />
+        <p>
+          یکی از ابزارهای بسیار مفید و کاربردی برای خرید اینترنتی بلیط هواپیما،
+          تقویم قیمتی است. با استفاده از تقویم قیمتی شما می‌توانید کمترین و
+          بیشترین قیمت بلیط پرواز را در روزهای قبل و بعد از آن تاریخ مشاهده
+          کنید. در صورتی که اصرار به خرید بلیط هواپیما در یک روز خاص نداشته
+          باشید، این امکان به شما کمک می‌کند تا مبلغ بلیط هواپیما برایتان با
+          مبلغ به صرفه تری تمام شود.
+        </p>
+        <br />
+        <p>
+          علاوه بر این، با استفاده از فیلترهای کنار صفحه می‌توانید ایرلاین مورد
+          نظرتان را انتخاب کنید. ضمنا می‌توانید، بلیط چارتر هواپیما یا سیستمی را
+          فعال کنید تا فقط یکی از این دو نوع بلیط را مشاهده کنید. بلیط هواپیما
+          خارجی ،کلاس پروازی و زمان پرواز هم از دیگر گزینه‌هایی است که با انتخاب
+          آنها، تعداد بلیط ها محدودتر و رزرو بلیط هواپیما برای شما آسانتر
+          می‌شود.
+        </p>
+        <br />
+        <p>
+          برای پرداخت هزینه می‌توانید از کارت شتاب استفاده کنید. پس از پرداخت،
+          خرید اینترنتی بلیط هواپیما با موفقیت انجام میشود و بلیط به ایمیل شما
+          ارسال میشود. همچنین در همه این مراحل، پشتیبانی علی‌بابا در کنار شماست
+          تا هر زمانی که سوال یا مشکلی داشتید، 24 ساعته پاسخگوی شما باشد.
+        </p>
+        <br />
+        <h3>امکان استرداد بلیط هواپیما</h3>
+        <br />
+        <p>
+          یکی دیگر از امکانات علی‌بابا استرداد آنلاین بلیط هواپیما (کنسلی بلیط)
+          است. در صورتی که پس از رزرو بلیط هواپیما برنامه سفرتان تغییر کرده، به
+          راحتی می‌توانید طبق قوانین کنسلی پرواز داخلی، بلیط هواپیمای خود را
+          کنسل کنید. پس از استرداد، پول شما در کمترین زمان ممکن به حسابتان
+          برگردانده می‌شود. شما برای خرید اینترنتی بلیط هواپیما از علی‌بابا
+          می‌توانید از تلفن همراه، رایانه شخصی یا تبلت استفاده کنید. علی‌بابا در
+          همه این ابزارها کاربرپسند است و شما خریدی آسان را تجربه خواهید کرد.
+          همچنین امکان نصب و استفاده از اپلیکیشن علی‌بابا برای گوشی های اندروید
+          و آیفون وجود دارد.
+        </p>
+        <br />
+        <h3>رزرو بلیط هواپیما از معتبرترین ایرلاین‌ها</h3>
+        <br />
+        <p>
+          شما برای خرید بلیط هواپیما از بین ایرلاینهای مختلف حق انتخاب دارید و
+          می‌توانید از ایرلاینهای ماهان، زاگرس، کیش ایر، قشم ایر، آسمان، کاسپین،
+          تابان، وارش یا معراج، بلیط پرواز داخلی خود را خریداری کنید.
+        </p>
+        <br />
+        <p>
+          هر یک از این ایرلاین ها ویژگیها و مشخصات خود را دارند. برخی امکانات و
+          خدمات رفاهی بیشتر دارند و برخی دیگر بلیط هواپیما را با قیمت به صرفه
+          تری ارائه می‌دهند. زمانی که در علی‌بابا لیست بلیط تمام این ایرلاین ها
+          را مشاهده می‌کنید، می‌توانید از بین آنها انتخاب کنید.
+        </p>
+        <br />
+        <h3>علی‌بابا: رتبه یک خرید اینترنتی بلیط سفر</h3>
+        <br />
+        <p>
+          علی‌بابا طی این سالها، اعتبار زیادی نزد مشتریان خود کسب کرده است. طبق
+          نظرسنجی، 97.2 درصد از مشتریان علی‌بابا از خدمات این سامانه راضی
+          بوده‌اند و استفاده از آن را به دوستان و آشنایان خود پیشنهاد داده‌اند.
+          سرعت سادگی خرید اینترنتی بلیط هواپیما، اعتبار و خوشنامی، امکان استرداد
+          آنلاین بلیط هواپیما و پشتیبانی 24 ساعته در تمام روزهای هفته، رتبه یک
+          فروش بلیط را از آنِ علی‌بابا کرده است.
+        </p>
+        <br />
+        <p>
+          شما با رزرو بلیط هواپیما در علی‌بابا، از سفری راحت و بی‌دردسر مطمئن
+          خواهید بود.
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      <h2>Design by: Ali Sharifi</h2>
+      <h3>For Practice purposes</h3>
+      <a href="https://github.com/alisharifi79">Visit My Github</a>
+    </div>
+  </body>
+</html>

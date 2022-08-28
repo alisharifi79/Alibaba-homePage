@@ -1,0 +1,1535 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #f6f6f6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* margin: 0px 150px 0px 150px; */
+  max-width: 1500px;
+  /* overflow-x:hidden; */
+}
+
+/*navbar styling*/
+
+#total-nav .navbar{
+  background-color: #fff;
+  /* border-left: 15px solid #fff; */
+  /* border-right: 65px solid #fff; */
+  border-radius: 5px;
+  width: 100%;
+  height: 65px;
+}
+#nav-content{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  justify-items: center;
+}
+#right-side-nav{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+  margin-top: 5px;
+  margin-right: -250px;
+}
+#left-side-nav{
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+  margin: 10px;
+  margin-top: 20px;
+  /* margin-right: 280px; */
+}
+#left-side-nav div{
+  direction: rtl;
+  margin-right: 35px;
+}
+#left-side-nav a{
+  font-size: 20px;
+  color: #4b5259;
+  margin-right: 2px;
+  
+}
+#logo{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100px;
+  height: 60px;
+  margin-right: 5px;
+  margin-left: 100px;
+}
+#logo img{
+  float: right;
+  align-self: center;
+  width: 50px;
+  height: 40px;
+}
+#logo a{
+  color: #000000;
+  font-size: 26px;
+  align-self: center;
+}
+#logo a span{
+  font-size: 12px;
+  margin-right: 5px;
+}
+.dropdown {
+  display: inline-block;
+  margin: 8px;
+  margin-left: 18px;
+}
+.dropbtn{
+  color: #4b5259;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 8px 27px 8px 27px;
+  border: #fff;
+}
+.dropbtn i{
+  margin-right: 15px;
+}
+.dropbtn:hover{
+  background-color: #d4d5d64e;
+  border-radius: 8px;
+}
+.dropdown a{
+  font-size: 20px;
+  color: #4b5259;
+}
+#tour-navbar{
+  align-self: center;
+  margin-right: 20px;
+  margin-left: 10px;
+  
+}
+#tour-navbar a{
+  font-size: 20px;
+  color: #4b5259;
+  margin-left: 25px;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  text-decoration: none;
+  min-width: 160px;
+  direction: rtl;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 7px;
+  z-index: 1;
+  list-style: none;
+}
+#dropdown-content hr{
+  color: #0000001f;
+}
+#dropdown-content li{
+  padding: 6px 14px;
+  border-radius: 7px;
+}
+#dropdown-content li{
+  margin: 10px;
+}
+#dropdown-content li:hover{
+  background-color: #d4d5d627;
+}
+.dropdown:hover #dropdown-content {
+  padding: 2px solid rgb(0, 0, 0);
+  display: block;
+}
+
+#ver-line{
+  /* width: px; */
+  height: 23px;
+  margin-top: 15px;
+  margin-right: -25px;
+}
+/* travel section */
+
+#flyImg-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#flyImg-div img{
+  width: 100%;
+  /* border-right: 80px solid rgb(252, 252, 252); */
+  /* border-left: 50px solid rgb(252, 252, 252); */
+  height: 320px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+/* Style the tab */
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: 79%;
+  height: 93px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid #d4d5d6;
+  border-bottom: 2px solid #d4d5d6;
+  margin-top: -100px;
+  background-color: #ffffff;
+  z-index: 999;
+}
+#tab-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tab-content-div{
+  display: flex;
+  justify-content: center;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  width: 12%;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 23px;
+  color: #4b5259;
+  padding: 14px 16px;
+  margin-left: 0px;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(240, 238, 238);
+  border-radius: 5px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #0077db;
+  /* background-color: #ccc; */
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  justify-self: center;
+  width: 79%;
+  height: 160px;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border: 1px solid #d4d5d6;
+  margin-top: -5px;
+  background-color: #ffffff;
+}
+#not-btn-part{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 85%;
+}
+#not-btn-part label{
+z-index: 51;
+}
+.fields .button-area{
+  margin-left: 15px;
+  width: 25%;
+}
+.tabcontent.open{
+  display: flex;
+}
+#one-two-way{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  margin-right: 40px;
+
+}
+#one-two-way .dropdown{
+  display: inline-block;
+  direction: rtl;
+  z-index: 999;
+  
+}
+#one-two-way .dropbtn{
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #d4d5d6;
+  padding: 5px;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: 9999px;
+}
+#one-two-way li:hover{
+  background-color: #b0e4ee2a;
+}
+/* form */
+
+#FlyIn,
+#FlyOut,
+#Train{
+  align-items: center;
+  justify-content:center;
+}
+#Bus,
+#Tour,
+#Hotel,
+#Villa{
+  align-items: center;
+  justify-content: end;
+}
+#Bus .fields,
+#Tour .fields,
+#Hotel .fields,
+#Villa .fields{
+  margin-right: 40px;
+  margin-top: 44px;
+}
+#passe{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  direction: rtl;
+}
+#passenger{
+  z-index: 50;
+  margin-right: -60px;
+}
+#passe label{
+  background-color: #fff;
+  font-size: 15px;
+  color: #868a8f;
+  margin-top: -40px;
+  padding: 2px 4px 2px 6px;
+}
+#FlyIn .fields .date-field,
+#FlyOut .fields .date-field,
+#Train .fields .date-field{
+margin-right: 20px;
+}
+#FlyIn .fields .date-field .field,
+#FlyOut .fields .date-field .field,
+#Train .fields .date-field .field{
+margin-right: 10px;
+}
+#FlyIn .fields .date-field .field input,
+#FlyOut .fields .date-field .field input,
+#Train .fields .date-field .field input{
+ width: 98%;
+}
+#FlyIn .fields .place-field .field,
+#FlyOut .fields .place-field .field,
+#Train .fields .place-field .field{
+  margin-left: -30px;
+}
+#FlyIn .fields .place-field .field input,
+#FlyOut .fields .place-field .field input,
+#Train .fields .place-field .field input{
+  width: 210px;
+}
+#FlyIn .fields .field #passenger,
+#FlyOut .fields .field #passenger,
+#Train .fields .field #passenger{
+  width: 155px;
+}
+#Tour .fields .place-field{
+  width: 99%;
+  margin-right: -83px;
+}
+#Tour .fields .place-field input{
+  width: 243px;
+}
+#Tour .fields .date-field{
+  margin-left: 20px;
+}
+#Tour .fields .date-field input{
+  width: 154px;
+}
+#Tour .fields .field #passenger{
+  
+  width: 103%;
+}
+#Hotel .fields .place-field{
+  width: 95%;
+  margin-right: 82px;
+}
+#Hotel .fields .place-field input{
+  width: 500px;
+}
+#Hotel .fields .date-field .field input{
+  width: 154px;
+}
+#Hotel #passe{
+  width: 290px;
+}
+#Hotel .fields .field #passenger{
+  width: 100%;
+}
+#Bus .fields{
+  margin-right: 83px;
+}
+#Bus .fields .date-field .field{
+  margin-right: 136px;
+}
+#Bus .fields .date-field .field input{
+  width: 352px;
+}
+#Bus .fields .place-field .field{
+  margin-left: 59px;
+}
+#Bus .fields .place-field .field input{
+  width: 302px;
+}
+#Villa .fields .button-area{
+  margin-right: 10px;
+}
+#Villa .fields .date-field .field {
+  margin-right: 26px;
+  margin-left: 15px;
+}
+#Villa .fields .date-field .field input{
+  width: 195px;
+}
+#Villa .fields .place-field .field{
+  margin-right: 65px;
+  margin-left: 25px;
+}
+#Villa .fields .place-field .field input{
+  width: 320px;
+}
+#Villa .fields .field #passenger{
+  width: 150%;
+}
+#Villa .fields .field label{
+  margin-top: -60px;
+}
+#FlyOut-btn{
+  display: flex;
+  direction: rtl;
+}
+
+#travel-form .fields{
+  display: flex;
+  justify-content: center;
+}
+#travel-form .field,
+#travel-form .fields .field{
+  height: 45px;
+  width: 190px;
+  /* margin-bottom: 15px; */
+  margin-left: 10px;
+}
+#travel-form .date-field{
+  display: flex;
+  margin-left: 10px;
+} 
+#travel-form .date-field .field{
+width: 160px;
+margin: 0px;
+}
+#travel-form .place-field .field{
+width: 250px;
+margin: 0px;
+}
+#travel-form .place-field{
+  display: flex;
+  margin-left: 10px;
+}
+#travel-form .name{
+  margin-right: 10px;
+}
+#travel-form .field input{
+  height: 100%;
+  width: 79%;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  outline: none;
+  direction: rtl;
+  font-size: 17px;
+  padding-right: 5px;
+}
+#travel-form .field input:focus{
+  border-color: #b3b3b3;
+}
+#travel-form .button-area{
+display: flex;
+}
+#travel-form .button-area button{
+color: #000;
+display: block;
+width: 160px!important;
+height: 45px;
+outline: none;
+font-size: 25px;
+font-weight: 500;
+border-radius: 8px;
+cursor: pointer;
+flex-wrap: nowrap;
+background: #ffb703;
+border: 2px solid #ffb703;
+}
+#travel-form .button-area button:hover{
+color: #ffb703;
+background: none;
+}
+/* alibaba-img */
+#alibaba{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+#alibaba img{
+  width: 79%;
+  height: 194px;
+  padding: 0px;
+  border: 0px;
+  border-radius: 5px;
+}
+/* alibaba guide */
+#alibaba-guide-section{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+#alibaba-guide{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 79%;
+  border-radius: 6px; 
+  height: 165px;
+  direction: rtl;
+  background-color: #ffffff;
+  border: 1px solid #d4d5d6;
+}
+#alibaba-guide ul{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#alibaba-guide li{
+  font-size: 17px;
+  margin: 10px;
+}
+#alibaba-guide li i{
+  color: #70cbd3;
+  font-size: 22px;
+}
+#alibaba-guide h3{
+  color: #5d656c;
+  font-size: 20px;
+}
+#alibaba-guide li p{
+  color: #67707a;
+}
+#alibaba-guide li a{
+  color: #0077db;
+}
+
+/* slideShow */
+#slideshow-section{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+#slideshow{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 79%;
+  height: 50px;
+  direction: rtl;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  margin-left: 20px;
+}
+#slideshow img{
+  display: flex;
+  justify-self: center;
+  border-radius: 5px;
+  height: 225px;
+  padding: 0px;
+  border: 0px;
+  width: 583px;
+  margin: 0px 20px 20px 0px;
+}
+
+/* Application guide */
+#app-guide-section{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-top: 20px;
+}
+#app-guide{
+  display:flex;
+  width: 79%;
+  height: 302px;
+  border-radius: 6px;
+  justify-content: center;
+  background-color: #ffffff;
+  direction: rtl;
+  border: 1px solid #d4d5d6;
+}
+#app-guide ul{
+  display: inline-block;
+  list-style: none;
+  align-self: center;
+  margin-right: 30px;
+}
+#app-guide li{
+  font-size: 16px;
+  margin: 10px;
+}
+#app-link{
+  margin-bottom: 50px;
+}
+#qrcode img{
+  width: 148px;
+  height: 187px;
+  padding: 0px;
+  border: 0px;
+}
+#app-img img{
+  width: 369px;
+  height: 294px;
+  padding: 0px;
+  border: 0px;
+}
+#app-img li{
+  margin-right: 170px;
+}
+#app-guide li a{
+  color: #0077db;
+}
+#app-guide li p{
+  color: #4b5259;
+}
+
+/* questions-section */
+#questions-section h1{
+  text-align: end;
+  width: 89%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#question-div nav {
+  margin: auto;
+  margin-top: 20px;
+  background: #fff;
+  position: relative;
+  text-align: start;
+  direction: rtl;
+  border-radius: 6px;
+  border: 1px solid #d4d5d6;
+  width: 79%
+}
+
+#question-div nav h2 {
+  font-size: 1.25rem;
+  position: relative;
+  height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  transition: all 0.05s;
+}
+#question-div i{
+  color: #2cbecb;
+  border: 1px solid #78d3db27;
+  padding: 5px 9px 5px 9px;
+  background-color: #78d3db27;
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+#question-div h2::before{
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 40px;
+  aspect-ratio: 1;
+  background: currentColor;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  content: "";
+  clip-path: polygon(50% 25%, 20% 80%, 80% 80%);
+  transform: rotate(180deg) scale(0.75);
+}
+
+#toggle:not(:checked) ~ h2::before {
+  transform: rotate(0deg) scale(0.75);
+}
+#toggle:checked ~ ul {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle:not(:checked) ~ ul {
+  opacity: 1;
+  transition: opacity 0.05s ease-in-out;
+}
+
+
+#question-div nav ul {
+  padding-left: 0;
+  padding-top: 1rem;
+  margin-top: 0;
+  background: #f6f6f6;
+  list-style: none;
+  overflow: hidden;
+  text-align: start;
+  direction: rtl;
+  transition: all 0.05s ease-out;
+  width: 100%;
+  position: absolute;
+}
+#question-div nav ul li {
+  border-radius: 6px;
+  position: relative;
+  display: inline-block;
+  line-height: 2.5;
+  width: 100%;
+  text-align: start;
+  margin: 0px;
+  margin-top: -24px;
+  font-size: 20px;
+  border: 1px solid #d4d5d6;
+  background: #fff;
+  transition: background 0.05s;
+  z-index: 999;
+}
+#question-div nav ul a {
+  display: block;
+  color: inherit;
+  /* text-transform: lowercase; */
+  font-weight: 400;
+  margin: 2px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+
+#question-div .container {
+  margin: auto;
+  color: #4b5259;
+}
+
+/* last-section */
+#last-section{
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  direction: rtl;
+  width: 79%;
+}
+#last-section p{
+  color: #4b5259;
+}
+#top-part {
+  display: flex;
+  direction: rtl;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#text-part{
+  width: 45%;
+}
+#top-part img{
+  width: 480px;
+  height: 365px;
+  margin-top: -20px;
+  margin-right: 192px;
+  margin-left: -90px;
+  border: 0;
+  padding: 0;
+
+}
+#footer{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 50px;
+  border-top: 1px solid #808b9467;
+}
+
+/* responsive media section */
+@media(max-width: 1495px){
+  #travel-form{
+    width: 96%;
+  }
+  .tabcontent{
+    height: 250px;
+  }
+  #FlyIn .fields .button-area,
+  #FlyOut .fields .button-area,
+  #Train .fields .button-area{
+    margin-top: 100px;
+  }
+  #Bus .fields .button-area{
+    margin-top: 93.5px;
+    margin-left: -1px;
+  }
+  #Tour .fields .button-area,
+  #Hotel .fields .button-area,
+  #Villa .fields .button-area{
+    margin-top: 98.5px;
+    margin-left: -1px;
+  }
+  #not-btn-part{
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+  #one-two-way{
+    margin-top: -10px;
+  }
+  #one-two-way .dropbtn{
+    width: 110%;
+  }
+  #FlyIn .fields .date-field,
+  #FlyOut .fields .date-field,
+  #Train .fields .date-field{
+    margin-right: 41px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  #FlyIn .fields .place-field,
+  #FlyOut .fields .place-field,
+  #Train .fields .place-field{
+    margin-right: 49px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  #FlyIn .fields .date-field .field,
+  #FlyOut .fields .date-field .field,
+  #Train .fields .date-field .field{
+    margin-left: -6px;
+    width: 200px;
+  }
+  #FlyIn .fields .place-field .field,
+  #FlyOut .fields .place-field .field,
+  #Train .fields .place-field .field{
+    margin-left: 7px;
+    width: 200px;
+  }
+  #FlyIn .fields .place-field .field input,
+  #FlyOut .fields .place-field .field input,
+  #Train .fields .place-field .field input{
+    width: 195px;
+  }
+  #FlyIn .fields .field,
+  #FlyOut .fields .field,
+  #Train .fields .field{
+    width: 500px;
+  }
+  #FlyIn .fields .field #passenger,
+  #FlyOut .fields .field #passenger,
+  #Train .fields .field #passenger{
+    margin-right: 2px;
+    width: 400px;
+  }
+  #FlyIn .fields label,
+  #FlyOut .fields label,
+  #Train .fields label{
+    display: none;
+  }
+  #Bus .fields .place-field{
+    margin-top: -57px;
+    margin-right: -21px;
+  }
+  #Bus .fields .date-field{
+    margin-right: 43px;
+  }
+  #Bus .fields .place-field .field{
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: -42px;
+  }
+  #Bus .fields .place-field .field input{
+    width: 200px;
+  }
+  #Bus .fields .field #passenger{
+    width: 400px;
+  }
+  #Tour .fields .place-field{
+    width: 420px;
+    margin-right: 10px;
+  }
+  #Tour .fields .date-field{
+    margin-right: 20px;
+  }
+  #Tour .fields .place-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: -46px;
+  }
+  #Tour .fields .date-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 45px;
+  }
+  #Tour .fields .place-field .field input{
+    width: 195px;
+  }
+  #Tour .fields .date-field .field input{
+    width: 195px;
+  }
+  #Tour label{
+    display: none;
+  }
+  #Tour #passe{
+    width: 500px;
+  }
+  #Tour .fields .field #passenger{
+    margin-top: -5px;
+    margin-right: -49px;
+    width: 400px;
+  }
+  #Hotel .fields .place-field{
+    width: 420px;
+    margin-right: 10px;
+  }
+  #Hotel .fields .date-field{
+    margin-right: 20px;
+  }
+  #Hotel .fields .place-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: -46px;
+  }
+  #Hotel .fields .date-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 45px;
+  }
+  #Hotel .fields .place-field .field input{
+    width: 400px;
+  }
+  #Hotel .fields .date-field .field input{
+    width: 195px;
+  }
+  #Hotel label{
+    display: none;
+  }
+  #Hotel #passe{
+    width: 500px;
+  }
+  #Hotel .fields .field #passenger{
+    margin-top: -5px;
+    margin-right: -49px;
+    width: 400px;
+  }
+  #Villa .fields .place-field{
+    width: 420px;
+    margin-right: 10px;
+  }
+  #Villa .fields .date-field{
+    margin-right: 20px;
+  }
+  #Villa .fields .place-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: -46px;
+  }
+  #Villa .fields .date-field .field{
+    margin-top: -3px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 45px;
+  }
+  #Villa .fields .place-field .field input{
+    width: 400px;
+  }
+  #Villa .fields .date-field .field input{
+    width: 195px;
+  }
+  #Villa label{
+    display: none;
+  }
+  #Villa #passe{
+    width: 500px;
+  }
+  #Villa .fields .field #passenger{
+    margin-top: -5px;
+    margin-right: -49px;
+    width: 400px;
+  }
+}
+@media(max-width: 1468px){
+  #logo{
+    margin-right: 5px;
+  }
+  #left-side-nav{
+    margin-right: 250px;
+  }
+  #left-side-nav div{
+    width: 130px;
+    margin-right: 0px;
+  }
+  #left-side-nav a{
+    font-size: 15px;
+  }
+  #support{
+    margin-left: 30px;
+  }
+  #right-side-nav{
+    margin-right: 0px;
+  }
+  .dropbtn{
+    width: 100px;
+    font-size: 17px;
+    padding: 8px 10px 8px 10px;
+    margin-left: 5px;
+  }
+  #tour-navbar{
+    margin-top: -5px;
+  }
+  #tour-navbar a{
+    font-size: 17px;
+  }
+  .tab button{
+    font-size: 19px;
+  }
+
+  #travel-form{
+    width: 94%;
+  }
+}
+@media(max-width: 1300px){
+  #logo{
+    margin-right: 5px;
+  }
+  #left-side-nav{
+    margin-right: 150px;
+  }
+  #left-side-nav div{
+    width: 130px;
+    margin-right: 0px;
+  }
+  #left-side-nav a{
+    font-size: 15px;
+  }
+  #support{
+    margin-left: 30px;
+  }
+  #right-side-nav{
+    margin-right: 0px;
+  }
+  .dropbtn{
+    width: 100px;
+    font-size: 17px;
+    padding: 8px 10px 8px 10px;
+    margin-left: 5px;
+  }
+  #tour-navbar{
+    margin-top: -5px;
+  }
+  #tour-navbar a{
+    font-size: 17px;
+  }
+  .tab button{
+    font-size: 17px;
+  }
+
+  #travel-form{
+    width: 96%;
+  }
+}
+@media(max-width: 1200px){
+  #logo{
+    margin-right: 5px;
+  }
+  #left-side-nav{
+    margin-right: 50px;
+  }
+  #left-side-nav div{
+    width: 130px;
+    margin-right: 0px;
+  }
+  #left-side-nav a{
+    font-size: 15px;
+  }
+  #support{
+    margin-left: 30px;
+  }
+  #right-side-nav{
+    margin-right: 0px;
+  }
+  .dropbtn{
+    width: 100px;
+    font-size: 17px;
+    padding: 8px 10px 8px 10px;
+    margin-left: 5px;
+  }
+  #tour-navbar{
+    margin-top: -5px;
+  }
+  #tour-navbar a{
+    font-size: 17px;
+  }
+  .tab button{
+    font-size: 17px;
+  }
+  #travel-form{
+    width: 96%;
+  }
+}
+@media(max-width: 1100px){
+  #logo{
+    margin-right: 5px;
+  }
+  #left-side-nav{
+    margin-right: 0px;
+  }
+  #left-side-nav div{
+    width: 130px;
+    margin-right: 0px;
+  }
+  #left-side-nav a{
+    font-size: 15px;
+  }
+  #support{
+    margin-left: 30px;
+  }
+  #right-side-nav{
+    margin-right: 0px;
+  }
+  .dropbtn{
+    width: 100px;
+    font-size: 17px;
+    padding: 8px 10px 8px 10px;
+    margin-left: 5px;
+  }
+  #tour-navbar{
+    margin-top: -5px;
+  }
+  #tour-navbar a{
+    font-size: 17px;
+  }
+  .tab button{
+    font-size: 17px;
+  }
+  #travel-form{
+    width: 96%;
+  }
+}
+@media(max-width: 1070px){
+  #total-nav nav{
+    display: none;
+  }
+  #nav-content{
+    display: none;
+  }
+  #tab-div{
+    display: none;
+  }
+  #tab-content-div{
+    display: none;
+  }
+  #flyImg-div{
+    display: none;
+  }
+  #alibaba{
+    display: none;
+  }
+  #header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb703;
+    height: 150px;
+  }
+  #header-logo img{
+    width: 19.5%;
+    margin-top: -60px;
+  }
+  #responsive-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #responsive-nav .row {
+    border: 1px solid #d4d5d6;
+    background-color: #f9f9f9;
+    border-bottom: 0px;
+    width: 48%;
+    margin-top: -75px;
+    margin-bottom: 20px;
+  }
+  #row1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #row2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #responsive-nav .column {
+    flex: 50%;
+    height: 49px;
+    border-bottom: 1px solid #e2e2e3;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #4b5259;
+  }
+  #responsive-nav .column a i{
+    color: #808b94;
+    margin-left: 8px;
+    margin-top: 15px;
+  }
+  #slideshow{
+    display: none;
+  }
+  #alibaba-guide{
+    width: 96%;
+    justify-content: space-between;
+  }
+  #alibaba-guide ul{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  #alibaba-guide li{
+    font-size: 15px;
+    margin: 10px;
+  }
+  #alibaba-guide h3{
+    font-size: 20px;
+  }
+  #responsive-slideshow{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 96%;
+    height: 50px;
+    direction: rtl;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    /* margin-left: 265px; */
+  }
+  #responsive-slideshow img{
+    border-radius: 5px;
+    height: 126px;
+    padding: 0px;
+    border: 0px;
+    width: 250%;
+  }
+  #app-guide{
+    width: 96%;
+    height: fit-content;
+    justify-content: space-between;
+  }
+  #app-guide #link-div{
+    display: block;
+  }
+  #app-guide #app-link-res{
+    width: 200px;
+    display: inline-block;
+    list-style: none;
+    align-self: center;
+    text-align: center;
+    margin-right: -10px;
+  }
+  #app-guide #app-link-res button{
+    color: #fff;
+    display: block;
+    width: 118px!important;
+    height: 34px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 18px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #0077db;
+    border: 2px solid #0077db;
+    margin-right: 25px;
+    font-size: 18px;
+
+  }
+  #app-guide #qrcode{
+    display: none;
+  }
+  #app-guide #app-link{
+    display: none;
+  }
+  #app-guide #app-img{
+    width: 200px;
+  }
+  #app-guide #app-img img{
+    margin-right: -120px;
+    width: 140px;
+    height: 120px;
+  }
+  #questions-section h1{
+    width: 96%;
+  }
+  #question-div nav{
+    width: 96%;
+  }
+  #last-section{
+    width: 96%;
+  }
+  #last-section img{
+    display: none;
+  }
+  #text-part{
+    width: 100%;
+  }
+  /* Style the sticky navbar */
+  #sticky-nav{
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #d4d5d6;
+    border-radius: 20px;
+    direction: rtl;
+  }
+  #sticky-nav .row{
+    float: left;
+    background-color: #fff;
+  }
+  #sticky-nav .column{
+    flex: 16.666%;
+    height: 42px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #sticky-nav .column a i{
+    color: #000000d4;
+    margin-left: 9px;
+    margin-top: 10px;
+  }
+  .sticky{
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 2%;
+    width: 96%;
+    z-index: 9999;
+  }
+  .logo-stick{
+    position: fixed;
+    top: 0px; 
+    width: 100%;
+    height: 75px !important;
+    z-index: 9999;
+  }
+}
+@media(max-width: 760px){
+  #total-nav nav{
+    display: none;
+  }
+  #nav-content{
+    display: none;
+  }
+  #tab-div{
+    display: none;
+  }
+  #tab-content-div{
+    display: none;
+  }
+  #flyImg-div{
+    display: none;
+  }
+  #alibaba{
+    display: none;
+  }
+  #header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb703;
+    height: 150px;
+  }
+  #header-logo img{
+    width: 19.5%;
+    margin-top: -60px;
+  }
+  #responsive-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #responsive-nav .row {
+    border: 1px solid #d4d5d6;
+    background-color: #f9f9f9;
+    border-bottom: 0px;
+    width: 48%;
+    margin-top: -75px;
+    margin-bottom: 20px;
+  }
+  #row1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #row2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #responsive-nav .column {
+    flex: 50%;
+    height: 49px;
+    border-bottom: 1px solid #e2e2e3;
+  }
+  #slideshow{
+    display: none;
+  }
+  #alibaba-guide{
+    display: block;
+    width: 96%;
+    height: fit-content;
+  }
+  #alibaba-guide ul{
+    display: block;
+    list-style: none;
+    text-align: start;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  #alibaba-guide li{
+    font-size: 16px;
+    margin: 10px;
+  }
+  #alibaba-guide h3{
+    font-size: 20px;
+  }
+  #responsive-slideshow{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 96%;
+    height: 50px;
+    direction: rtl;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    /* margin-left: 70px; */
+  }
+  #responsive-slideshow img{
+    border-radius: 5px;
+    height: 126px;
+    padding: 0px;
+    border: 0px;
+    width: 120%;
+  }
+  #app-guide{
+    width: 96%;
+    height: fit-content;
+    justify-content: space-between;
+  }
+  #app-guide #app-link-res{
+    width: 200px;
+    display: inline-block;
+    list-style: none;
+    align-self: center;
+    text-align: center;
+    margin-right: -10px;
+  }
+  #app-guide #app-link-res button{
+    color: #fff;
+    display: block;
+    width: 118px!important;
+    height: 34px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 18px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #0077db;
+    border: 2px solid #0077db;
+    margin-right: 25px;
+    font-size: 18px;
+
+  }
+  #app-guide #qrcode{
+    display: none;
+  }
+  #app-guide #app-link{
+    display: none;
+  }
+  #app-guide #app-img{
+    width: 200px;
+  }
+  #app-guide #app-img img{
+    margin-right: -120px;
+    width: 140px;
+    height: 120px;
+  }
+  #questions-section h1{
+    width: 96%;
+  }
+  #question-div nav{
+    width: 96%;
+  }
+  #question-div h2::before{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 40px;
+    aspect-ratio: 1;
+    background: currentColor;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    content: "";
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+    transform: rotate(180deg) scale(0.75);
+  }
+  #last-section{
+    width: 96%;
+  }
+  #last-section img{
+    display: none;
+  }
+  #text-part{
+    width: 100%;
+  }
+}
+@media(max-width: 350px){
+  #app-guide #app-img{
+    display: none;
+  }
+  #responsive-slideshow{
+    display: none;
+  }
+}
