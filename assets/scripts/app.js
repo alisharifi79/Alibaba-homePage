@@ -77,6 +77,7 @@ function carouselRes() {
 window.onscroll = function () {
   stickyNav();
   stickyLogo();
+  addMargin();
 };
 
 // Get the navbar
@@ -87,7 +88,7 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyNav() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset > 50 + sticky) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');
@@ -101,9 +102,19 @@ var stickLogo = header.offsetTop;
 
 // Add the stickLogo class to the header when you reach its scroll position. Remove "stickLogo" when you leave the scroll position
 function stickyLogo() {
-  if (window.pageYOffset > stickLogo) {
+  if (window.pageYOffset > 50 + stickLogo) {
     header.classList.add('logo-stick');
   } else {
     header.classList.remove('logo-stick');
+  }
+}
+
+var guide = document.getElementById('alibaba-guide');
+
+function addMargin() {
+  if (window.pageYOffset > 50 + stickLogo) {
+    guide.classList.add('add-margin');
+  } else {
+    guide.classList.remove('add-margin');
   }
 }
